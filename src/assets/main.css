@@ -1,0 +1,47 @@
+/* Base styles */
+:root {
+  --v-theme-background: #121212;
+  --v-theme-surface: #1e1e1e;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--v-theme-background);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* Utility classes */
+.full-height {
+  min-height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Vuetify overrides */
+.v-application {
+  background-color: var(--v-theme-background) !important;
+}
+
+.v-card {
+  background-color: var(--v-theme-surface) !important;
+}
